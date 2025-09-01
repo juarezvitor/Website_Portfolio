@@ -15,7 +15,7 @@
         return (
 
 
-            <header className="bg-PretoFundo container ml-52 mr-52 px-4 margin-bottom mb-20 position-sticky">
+            <header className="bg-PretoFundo container ml-52 mr-52 px-4 margin-bottom mb-20 fixed">
                 <div className="flex justify-between items-center h-14 p-auto pt-6 px-20">
                     <div>
                         <h1 className="text-Branco font-light antialiased">Juarez<br/><span className="pl-2">Vitor</span></h1>
