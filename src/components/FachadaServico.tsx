@@ -55,6 +55,11 @@ export default function CarouselServicos() {
 
   return (
     <section className="relative max-w-screen-2xl mx-auto px-20 mb-20">
+          <div className="mb-20">
+            <h3 className="text-white text-base md:text-lg pl-4 border-l-4 border-l-blue-500">
+            .../Serviços ...
+            </h3>
+        </div>
       <Carousel setApi={setApi} opts={{ align: "center" }} className="w-full">
         <CarouselContent className="-ml-1">
           {slides.map((slide, index) => (
