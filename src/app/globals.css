@@ -6,6 +6,16 @@
 
 @custom-variant dark (&:is(.dark *));
 
+
+.section {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.section.active {
+  opacity: 1;
+}
+
 @theme {
     --color-CinzaClaro: #A6A6A6;
     --color-Branco: #f5f5f5;

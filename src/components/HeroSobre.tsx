@@ -18,14 +18,13 @@ export default function Sobre() {
           <h2 className="font-extralight text-lg md:text-xl leading-relaxed">
             Olá! Me chamo <strong className="font-extrabold">Juarez Vitor.</strong>
             <br />
-            Sou Desenvolvedor Web <strong className="font-extrabold">Full-Stack</strong> e tenho aproximadamente <strong className="font-extrabold">1 ano</strong> de experiência em T.I.
+            Sou Desenvolvedor Web <strong className="font-extrabold">Full-Stack</strong> e tenho aproximadamente <strong className="font-extrabold">1 ano e 5 meses</strong> de experiência com T.I.
           </h2>
           <p className="text-sm md:text-base font-light">
             Atualmente, tenho 21 anos, sou natural de Blumenau e moro em Balneário Camboriú. Minha trajetória começou em áreas operacionais, passando pelo Exército Brasileiro e pela indústria. Mais tarde, atuei com informática e como analista de suporte, onde tive contato direto com manutenção de computadores e suporte técnico.
           </p>
           <p className="text-sm md:text-base font-light">
-            Desde pequeno, a tecnologia sempre fez parte da minha vida. Com 10 anos, já passava horas jogando no computador e resolvendo problemas por conta própria. Esse fascínio me motivou a seguir carreira em T.I. — sempre fui o &quot;cara que resolve qualquer coisa no PC&quot; para amigos e família.
-          </p>
+            Desde pequeno, a tecnologia sempre fez parte da minha vida com 10 anos já passava horas jogando no computador e resolvendo problemas por conta própria. Esse fascínio virou minha motivação para seguir carreira no TI, alias sempre fui reconhecido por amigos e família como &quot;aquele que resolve qualquer coisa no PC&quot;.          </p>
           <p className="text-sm md:text-base font-light">
             Hoje, como graduando em Sistemas de Informação, dedico meus estudos ao desenvolvimento web, com foco em me tornar um Full-Stack Developer. Acredito que programar é muito mais do que escrever código: é transformar ideias em soluções reais, escaláveis e acessíveis. O que mais me inspira é a possibilidade de criar algo do zero, usando apenas conhecimento, prática e criatividade.
           </p>

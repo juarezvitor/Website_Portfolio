@@ -3,8 +3,9 @@
 import { useEffect, useRef } from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
-import { ArrowRight, Github, Linkedin, Facebook, Instagram  } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Facebook, Instagram, Phone  } from "lucide-react";
 import Typed from "typed.js";
+import FachadaServico from "./FachadaServico";
 
 
 
@@ -12,11 +13,11 @@ import Typed from "typed.js";
 export default function HeroSection() {
 
     const fachadaBotoes = [
-        {label: 'Github', href: 'Linkencaminhar', icon: <Github className="mr-0.5 h-14 w-14"/>},
-        {label: 'Linkedin', href: 'Linkencaminhar', icon: <Linkedin className="mr-0.5 h-14 w-14"/>},
-        {label: 'Telegram', href: 'Linkencaminhar', icon: <Linkedin className="mr-0.5 h-14 w-14"/>},
-        {label: 'Facebook', href: 'Linkencaminhar', icon: <Facebook className="mr-0.5 h-14 w-14"/>},
-        {label: 'Instagram', href: 'Linkencaminhar', icon: <Instagram className="mr-0.5 h-14 w-14"/>}
+        {label: 'Github', href: 'https://github.com/juarezvitor', icon: <Github className="mr-0.5 h-14 w-14"/>},
+        {label: 'Linkedin', href: 'https://www.linkedin.com/in/juarez-vitor', icon: <Linkedin className="mr-0.5 h-14 w-14"/>},
+        {label: 'Telegram', href: 'https://t.me/juarezvitor', icon: <Phone className="mr-0.5 h-14 w-14"/>},
+        {label: 'Facebook', href: 'https://www.facebook.com/juarez.vitor.100', icon: <Facebook className="mr-0.5 h-14 w-14"/>},
+        {label: 'Instagram', href: 'https://www.instagram.com/juaara', icon: <Instagram className="mr-0.5 h-14 w-14"/>}
     ]
 
     const fullStackRef = useRef<HTMLSpanElement | null>(null);
@@ -62,15 +63,15 @@ export default function HeroSection() {
   }, []);
 
     return (
-        <main className="max-w-screen-2xl mx-auto container px-20 mb-20 ">
+        <main className="max-w-screen-2xl mx-auto container px-20">
           <section className="flex justify-between">
-            <div className="mt-1">
+            <div className="mt-0.5">
               <h1 className="text-Branco text-8xl font-bold mr-20 mb-1.5">
                 <span ref={fullStackRef}></span>
               </h1>
             </div>
 
-            <div data-aos="fade-right" className="flex flex-row-reverse items-center pt-10 mr-70 gap-4">
+            <div data-aos="fade-right" className="flex flex-row-reverse items-center pt-10 mr-16 gap-4">
               {/* Botão com ícone */}
               <Button className="bg-Branco h-[48px] w-[50px] rounded-4xl flex items-center justify-center shadow-sm hover:shadow-Branco transform hover:-translate-y-1 transition-all duration-300 group">
                 <ArrowRight className="text-PretoFundo group-hover:text-Branco h-6 w-6 transition-colors duration-300" />
@@ -84,39 +85,39 @@ export default function HeroSection() {
               </Link>
             </div>
           </section>
-        <section className="flex justify-between mt-10">
-          
-          <div className="mt-12 mr-7">
-              <p className="text-Branco text-sm">
-                <span ref={apresentacaoRef}></span>
-                  
-              </p>
-          </div>
-          
-          
-          <div className="mr-16 mt-4">
-              <h1 className="text-Branco text-8xl font-bold ml-20 mb-1.5">
-                  <span ref={developerRef}></span>
-              </h1>
-          </div>
-          
-        </section>
-        <section className="flex flex-wrap items-center justify-between mt-20 gap-4">
-          {fachadaBotoes.map(item => (
-              <Link
-              key={item.label}
-              href={item.href}
-              target="_blank" 
-              rel="noopener noreferrer"
-              passHref
-              data-aos="zoom-in"
-              >
-              <Button className = "cursor-pointer w-[180] h-[55] items-center border border-Branco font-light text-Branco px-6 py-3 rounded-full shadow-sm hover:shadow-Branco hover:bg-neutral-800 hover:text-Branco hover:-translate-y-1 transition-all duration-300">{item.icon}{item.label}</Button>
-              </Link>
-          ))}
-          
-
-        </section>
+          <section className="flex justify-between mt-2">
+            
+            <div className="mt-12 mr-7">
+                <p className="text-Branco text-sm">
+                  <span ref={apresentacaoRef}></span>
+                    
+                </p>
+            </div>
+            
+            
+            <div className="mr-16 mt-4">
+                <h1 className="text-Branco text-8xl font-bold ml-20 mb-0.5">
+                    <span ref={developerRef}></span>
+                </h1>
+            </div>
+            
+          </section>
+          <section className="flex flex-wrap items-center justify-center mt-12 gap-4">
+            {fachadaBotoes.map(item => (
+                <Link
+                key={item.label}
+                href={item.href}
+                target="_blank" 
+                rel="noopener noreferrer"
+                passHref
+                data-aos="zoom-in"
+                >
+                <Button className = "cursor-pointer w-[180] h-[55] items-center border border-Branco font-light text-Branco px-6 py-3 rounded-full shadow-sm hover:shadow-Branco hover:bg-neutral-800 hover:text-Branco hover:-translate-y-1 transition-all duration-300">{item.icon}{item.label}</Button>
+                </Link>
+            ))}
+          </section>
+          <FachadaServico />
     </main>
+    
   );
 }

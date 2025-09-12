@@ -54,53 +54,50 @@ export default function CarouselServicos() {
   ];
 
   return (
-    <section className="relative max-w-screen-2xl mx-auto px-20 mb-20">
-          <div className="mb-20">
-            <h3 className="text-white text-base md:text-lg pl-4 border-l-4 border-l-blue-500">
-            .../Serviços ...
-            </h3>
-        </div>
-      <Carousel setApi={setApi} opts={{ align: "center" }} className="w-full">
-        <CarouselContent className="-ml-1">
-          {slides.map((slide, index) => (
-            <CarouselItem 
-              key={index} 
-              className={`basis-2/4 transition-all duration-500 ease-in-out ${
-                index === current ? "scale-100 opacity-100" : "scale-90 opacity-50"
-              }`}
-             >
-              <div className="p-1">
-                <Card className="bg-neutral-900 border border-Branco rounded-3xl text-white relative overflow-hidden">
-                {/* Div da imagem de fundo posicionada de forma absoluta para cobrir o card inteiro */}
-                <div 
-                    className="absolute inset-0 bg-cover bg-center z-0" 
-                    style={{ backgroundImage: `url('${slide.image}')` }}
-                ></div>
+    <section className="relative max-w-screen-2xl mx-auto px-5 mb-2">
+          <div className="mb-10">
+          </div>
+        <Carousel setApi={setApi} opts={{ align: "center" }} className="w-full">
+          <CarouselContent className="-ml-1">
+            {slides.map((slide, index) => (
+              <CarouselItem 
+                key={index} 
+                className={`basis-2/4 transition-all duration-500 ease-in-out ${
+                  index === current ? "scale-90 opacity-100" : "scale-80 opacity-50"
+                }`}
+              >
+                <div className="p-1">
+                  <Card className="bg-neutral-900 border border-Branco rounded-3xl text-white relative overflow-hidden">
+                  {/* Div da imagem de fundo posicionada de forma absoluta para cobrir o card inteiro */}
+                  <div 
+                      className="absolute inset-0 bg-cover bg-center z-0" 
+                      style={{ backgroundImage: `url('${slide.image}')` }}
+                  ></div>
 
-                {/* Div de overlay para melhorar o contraste do texto, também absoluta */}
-                <div className="absolute inset-0 bg-black opacity-60 z-0"></div>
+                  {/* Div de overlay para melhorar o contraste do texto, também absoluta */}
+                  <div className="absolute inset-0 bg-black opacity-60 z-0"></div>
 
-                <CardContent className="flex flex-col aspect-video items-center justify-center p-6 relative z-10">
-                    <h3 className="text-xl md:text-2xl font-bold mb-4">{slide.title}</h3>
-                    <p className="text-sm md:text-base text-center mb-6">{slide.description}</p>
-                    <div className="flex gap-2">
-                    <Button className="cursor-pointer bg-Branco text-PretoFundo px-8 py-3 rounded-full w-[250px] h-[48px] shadow-sm hover:shadow-Branco hover:bg-neutral-800 hover:text-Branco transform hover:-translate-y-1 transition-all duration-300">
-                        Saber Mais
-                    </Button>
-                    <button className="bg-white text-black font-semibold py-2 px-4 rounded-full">
-                        &rarr;
-                    </button>
-                    </div>
-                </CardContent>
-                </Card>
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious className="text-white bg-black/50 hover:bg-black/70 rounded-full w-12 h-12" />
-        <CarouselNext className="text-white bg-black/50 hover:bg-black/70 rounded-full w-12 h-12" />
-      </Carousel>
-      
+                  <CardContent className="flex flex-col aspect-video items-center justify-center p-6 relative z-10">
+                      <h3 className="text-xl md:text-2xl font-bold mb-4">{slide.title}</h3>
+                      <p className="text-sm md:text-base text-center mb-6">{slide.description}</p>
+                      <div className="flex gap-2">
+                      <Button className="cursor-pointer bg-Branco text-PretoFundo px-8 py-3 rounded-full w-[250px] h-[48px] shadow-sm hover:shadow-Branco hover:bg-neutral-800 hover:text-Branco transform hover:-translate-y-1 transition-all duration-300">
+                          Saber Mais
+                      </Button>
+                      <button className="bg-white text-black font-semibold py-2 px-4 rounded-full">
+                          &rarr;
+                      </button>
+                      </div>
+                  </CardContent>
+                  </Card>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="text-white bg-black/50 hover:bg-black/70 rounded-full w-12 h-12" />
+          <CarouselNext className="text-white bg-black/50 hover:bg-black/70 rounded-full w-12 h-12" />
+        </Carousel>
+        
       {/* Botões de navegação adicionados novamente */}
 
     </section>
