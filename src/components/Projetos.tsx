@@ -4,12 +4,8 @@ import { Card, CardContent } from './ui/card';
 
 
 const arraydeprojetos = [
-    { title: "Projeto 1", description: "Descrição do Projeto 1", image: "/images/projeto.jpg" },
-    { title: "Projeto 2", description: "Descrição do Projeto 2", image: "/images/projeto.jpg" },
-    { title: "Projeto 3", description: "Descrição do Projeto 3", image: "/images/projeto.jpg" },
-    { title: "Projeto 1", description: "Descrição do Projeto 1", image: "/images/projeto.jpg" },
-    { title: "Projeto 2", description: "Descrição do Projeto 2", image: "/images/projeto.jpg" },
-    { title: "Projeto 3", description: "Descrição do Projeto 3", image: "/images/projeto.jpg" },   
+    { title: "Projeto 1", description: "Website Construtora & Incorporadora Vepran", image: "/images/Vepran/foto_1.png" },
+    { title: "Projeto 2", description: "Website Clinica Veterinaria Salvavet", image: "/images/Salvavet/foto_1.png" }, 
 ];
 
 
@@ -43,7 +39,7 @@ export default function Projetos() {
                             <p className="text-sm md:text-base text-center mb-6">{projeto.description}</p>
                             <div className="flex gap-2">
                                 <Button className="cursor-pointer bg-Branco text-PretoFundo px-8 py-3 rounded-full w-[250px] h-[48px] shadow-sm hover:shadow-Branco hover:bg-neutral-800 hover:text-Branco transform hover:-translate-y-1 transition-all duration-300">
-                                    Saber Mais
+                                    <a href="/Projetos">Saber Mais</a>
                                 </Button>
                                 <button className="bg-white text-black font-semibold py-2 px-4 rounded-full">
                                     &rarr;
