@@ -22,7 +22,7 @@ const icons = [
 
 export default function Tecnologias() {
   return (
-    <section className="max-w-screen-2xl mx-auto bg-transparent text-white p-6 md:p-12 rounded-xl">
+    <section className="max-w-screen-2xl mx-auto bg-transparent text-white p-6 md:p-12 rounded-xl" data-aos="fade-up">
         <div className="mb-20">
             <h3 className="text-white text-base md:text-lg pl-4 border-l-4 border-l-blue-500">
             .../Habilidades ...

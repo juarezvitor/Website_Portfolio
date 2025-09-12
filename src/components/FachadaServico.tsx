@@ -54,7 +54,7 @@ export default function CarouselServicos() {
   ];
 
   return (
-    <section className="relative max-w-screen-2xl mx-auto px-5 mb-2">
+    <section className="relative max-w-screen-2xl mx-auto px-5 mb-2" data-aos="fade-up">
           <div className="mb-10">
           </div>
         <Carousel setApi={setApi} opts={{ align: "center" }} className="w-full">

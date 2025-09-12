@@ -13,7 +13,7 @@ export default function Projetos() {
     return (
 
 
-        <section className='max-w-screen-2xl mx-auto  bg-transparent text-white'>
+        <section className='max-w-screen-2xl mx-auto  bg-transparent text-white' data-aos="fade-up">
             <div className="flex justify-between mb-20">
                 <h3 className="text-white text-base md:text-lg pl-4 border-l-4 border-l-red-500">
                 .../Projetos ...

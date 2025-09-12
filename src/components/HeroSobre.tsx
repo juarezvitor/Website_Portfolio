@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Sobre() {
   return (
-    <section className="max-w-screen-2xl mx-auto px-4 md:px-20 py-10 border-b-2">
+    <section className="max-w-screen-2xl mx-auto px-4 md:px-20 py-10 border-b-2" data-aos="fade-up">
       <div className="mb-8">
         <h3 className="text-white text-base md:text-lg pl-4 border-l-4 border-l-purple-500">
           .../Sobre mim...

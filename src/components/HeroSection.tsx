@@ -78,7 +78,7 @@ export default function HeroSection() {
               </Button>
 
               {/* Botão link para Projetos */}
-              <Link href="/projetos" passHref>
+              <Link href="/Projetos" passHref>
                 <Button className="cursor-pointer bg-Branco text-PretoFundo px-8 py-3 rounded-full w-[250px] h-[48px] shadow-sm hover:shadow-Branco hover:bg-neutral-800 hover:text-Branco transform hover:-translate-y-1 transition-all duration-300">
                   Projetos
                 </Button>

@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { ArrowUpRight, X } from "lucide-react";
+import Link from "next/link";
 
 interface Projeto {
   nome: string;
@@ -27,7 +28,7 @@ const projetos: Projeto[] = [
     imagens: [
       "/images/Vepran/foto_1.png",
       "/images/Vepran/foto_2.png",
-      "/images/Vepran/Foto_3.jpg",
+      "/images/Vepran/foto_3.png",
     ],
   },
   {
@@ -53,6 +54,9 @@ export default function Projetos() {
 
   return (
     <main className="min-h-screen flex flex-col items-center justify-center gap-20 py-20">
+      <Link href="/" className="text-Branco hover:underline">
+        Voltar para a página inicial
+      </Link>
       {projetos.map((projeto, idx) => (
         <section
             key={idx}
@@ -61,6 +65,7 @@ export default function Projetos() {
             }`}
         >
             {/* Esquerda / Direita */}
+            
             <aside className="flex flex-col gap-6">
             <h1 className="text-white text-4xl font-bold">{projeto.nome}</h1>
 
