@@ -24,11 +24,11 @@ export default function Home() {
           <HeroHabilidades />
         </section>
 
-        <section id='Projetos' className="min-h-screen flex items-center justify-center">
+        <section id='Projetos' className="py-20 flex items-center justify-center">
           <Projetos />
         </section>
 
-        <section id='Footer' className="min-h-screen flex items-center justify-center">
+        <section id='Footer' className="py-20 flex items-center justify-center">
           <Footer />
         </section>
 

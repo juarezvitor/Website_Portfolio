@@ -13,7 +13,7 @@ export default function Footer() {
 
 
     return (
-        <footer className= "max-w-screen-2xl mx-auto text-white p-8 md:p-12">
+        <footer className= "max-w-screen-2xl mx-auto text-white pr-8 pl-8 md:p-12">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-16 items-end">
                 {/* Coluna 1: Nome e Título */}
                 <div className="flex flex-col items-center md:items-center text-center md:text-left text-Branco">

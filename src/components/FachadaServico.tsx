@@ -80,14 +80,6 @@ export default function CarouselServicos() {
                   <CardContent className="flex flex-col aspect-video items-center justify-center p-6 relative z-10">
                       <h3 className="text-xl md:text-2xl font-bold mb-4">{slide.title}</h3>
                       <p className="text-sm md:text-base text-center mb-6">{slide.description}</p>
-                      <div className="flex gap-2">
-                      <Button className="cursor-pointer bg-Branco text-PretoFundo px-8 py-3 rounded-full w-[250px] h-[48px] shadow-sm hover:shadow-Branco hover:bg-neutral-800 hover:text-Branco transform hover:-translate-y-1 transition-all duration-300">
-                          Saber Mais
-                      </Button>
-                      <button className="bg-white text-black font-semibold py-2 px-4 rounded-full">
-                          &rarr;
-                      </button>
-                      </div>
                   </CardContent>
                   </Card>
                 </div>
